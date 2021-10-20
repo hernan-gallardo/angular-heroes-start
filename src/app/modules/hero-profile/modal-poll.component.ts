@@ -29,3 +29,20 @@ export class ModalPollComponent implements OnInit {
   }
 
 }
+
+/*import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-modal-poll',
+  templateUrl: './modal-poll.component.html',
+  styleUrls: ['./modal-poll.component.css']
+})
+export class ModalPollComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
+*/

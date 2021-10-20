@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Heroe } from '../classes/heroe';
-import { HeroesService } from '../heroes.service';
+import { Heroe } from '../../classes/heroe';
+import { HeroesService } from '../../heroes.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -16,7 +16,7 @@ export class ListadoDeHeroesComponent implements OnInit {
   @ViewChild('spi', { static: true }) spinner;
   /* public heroes: Array<Heroe> = []; */
 
-  constructor(private heroesService: HeroesService, private router:Router) { }
+  constructor(public heroesService: HeroesService, private router:Router) { }
 
   submitSearch() {
     this.heroesService.resetPager();
@@ -79,3 +79,19 @@ export class ListadoDeHeroesComponent implements OnInit {
   }
 
 }
+
+/*import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-listado-de-heroes',
+  templateUrl: './listado-de-heroes.component.html',
+  styleUrls: ['./listado-de-heroes.component.css']
+})
+export class ListadoDeHeroesComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}*/

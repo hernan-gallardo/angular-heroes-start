@@ -1,10 +1,12 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { Heroe } from '../classes/heroe';
-import { HeroesService } from '../heroes.service';
+import { Heroe } from '../../classes/heroe';
+import { HeroesService } from '../../heroes.service';
 import { Location } from '@angular/common';
-import { ModalPollComponent } from '../modal-poll/modal-poll.component';
+//import { ModalPollRoutingModule } from '../modal-poll/modal-poll-routing.module';
+//import { ModalPollComponent } from '../modal-poll/modal-poll.component';
+
 
 @Component({
   selector: 'app-hero-profile',
@@ -51,3 +53,20 @@ export class HeroProfileComponent implements OnInit {
   }
 
 }
+
+/*import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-hero-profile',
+  templateUrl: './hero-profile.component.html',
+  styleUrls: ['./hero-profile.component.css']
+})
+export class HeroProfileComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
+*/
